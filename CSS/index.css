@@ -1,0 +1,201 @@
+/*
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: #FFB56C;
+}
+
+ul {
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+ 
+
+li {
+  font-size: 1.5rem;
+  color: #127DEE;
+  padding-left: 15%;
+}
+
+span {
+  font-weight: bold;
+}
+
+/*
+@font-face {
+    font-family: "ardoise";
+    src:
+        url("/font-family-ardoise/fonts/fonnts.com-Ardoise_Std.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "myriad-pro";
+    src:
+        url("/font-family-myriad-pro/MYRIADPRO-REGULAR.OTF") format("opentype");
+}
+
+/* General styles  and typographie pour les écrans tablettes et pc */
+
+/* le header */
+.fit-picture {
+  width:100%;
+}
+
+h1 {
+    text-align: center;
+    opacity: 0;
+    font-size: small;
+}
+
+h2 {
+    text-align: center;
+    color: #1AB4A1;
+    font-size: 2rem;
+}
+
+h3 {
+    text-align: center;
+    color:#FD1F1F;
+    font-size: 1.5rem;
+}
+nav {
+  width: 80%;       /* Ou n'importe quelle largeur fixe/max */
+  max-width: 400px;
+  margin: 0 auto;   /* Marges auto à gauche et à droite pour centrer */
+}
+
+
+a {
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 15px;
+}
+/*
+h1, h3 {
+    font-family: ardoise, sans-serif;1.5
+    font-weight: bold;
+    font-size: 2em;
+}
+
+a, h3 {
+    font-family: ardoise, sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+h4 {
+    font-family: ardoise, sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+    color: red;
+    
+}
+
+p {
+    font-family: myriad-pro, sans-serif;
+    font-size: 1em;
+    text-align: center;
+}
+/******************************** mettre l'image en fond d'écran dans le main ******************
+le no-repeat évite l'effet mosaïque
+le size fait que l'image couvre tout l'arrière-plan sans déformation
+le center la fixe au centre de l'écran
+le attachment:fixed permettra à l'image de rester fixée à l'écran,
+pendant que le contenu défile */
+
+main {
+  background-image: url("../IMAGES/PC_fond.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+}
+/* main */
+
+main {
+    margin-top: 0%;
+    padding: 0;
+    max-width: 100vw;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+/* réduire la taille des sections */
+
+section {
+  width: 50%; /* Définir obligatoirement une largeur inférieure à 100% */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: whitesmoke;
+  opacity: 0.90;
+  padding: 2% 5% 2% 5%;
+}
+
+/*********** adapter à la taille d'écran *************/
+/************** avec les média queries *************/
+
+/* les tablettes */
+
+@media screen and (width <=770px){
+  main {
+  background-image: url("../IMAGES/tablette_fond.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;}
+
+  li {
+  font-size: 1.2rem;
+  color: #127DEE;
+  padding-left: 10%;
+}
+
+
+}
+
+
+/* les mobiles */
+@media screen and (width <=450px){
+  
+  nav {
+  width: 60%;       /* Ou n'importe quelle largeur fixe/max */
+  max-width: 400px;
+  margin: 0 auto;   /* Marges auto à gauche et à droite pour centrer */
+}
+  
+  a {
+  font-size: 1.3rem;
+  padding: 5px;
+}
+  
+  
+  h1{
+    font-size: x-small;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  li {
+  font-size: 1.2rem;
+  color: #127DEE;
+  padding-left: 2%;}
+
+  section {
+    width: 80%;
+    padding: 1% 2% 1% 5%;
+    
+  } 
+    
+}
